@@ -1,0 +1,9 @@
+html {
+    background-image: url(./img/burger.jpg);
+    background-size: cover;
+    background-image: center;
+    background-attachment: fixed;
+}
+element.style {
+    background-image: url(assets/img/burger.jpg);
+}
