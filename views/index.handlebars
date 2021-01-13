@@ -1,4 +1,8 @@
-
+<div class="jumbotron jumbotron-fluid p-3 mb-2 bg-secondary text-black text-center">
+  <div class="container">
+    <h1 class="display-4;">Burger Bar</h1>
+  </div>
+</div>
 <!-- Card group -->
 
 <div class="card-group">
@@ -7,9 +11,27 @@
   <div class="card">
     <img src="/assets/img/sign.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text font-size-sm text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="/assets/img/burger.jpg" class="btn btn-sm btn-primary">Go somewhere</a>
+      <h5 class="card-title">Place Burger Order HERE</h5>
+      <p class="card-text font-size-sm text-muted">What kind of burger do you want? Type it below and hit the order
+        button!</p>
+
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="ca">Burger Type:</label>
+          <input type="text" id="bu" name="burger_name">
+        </div>
+
+        {{!-- <div class="form-group">
+          <label for="sleepy">Sleepy?</label><br>
+          <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
+          <input type="radio" name="sleepy" value="0"> Awake
+        </div> --}}
+
+        <button type="submit">ORDER</button>
+      </form>
+
+      {{!-- <a href="/assets/img/burger.jpg" class="btn btn-sm btn-primary">ORDER</a> --}}
     </div>
   </div>
 
@@ -17,9 +39,9 @@
   <div class="card">
     <img src="/assets/img/burger2.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text font-size-sm text-muted">This card has supporting text below as a natural lead-in to additional content.</p>
-      <a href="./img/burger2.jpg" class="btn btn-sm btn-primary">Go somewhere</a>
+      <h5 class="card-title">Pick up burger HERE</h5>
+      <p class="card-text font-size-sm text-muted">Your order is ready!</p>
+      <a href="./img/burger2.jpg" class="btn btn-sm btn-primary">PICKUP</a>
     </div>
   </div>
 
@@ -27,12 +49,9 @@
   <div class="card">
     <img src="/assets/img/plate.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text font-size-sm text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="/assets/img/pexels-horizon-content-3915906.jpg" class="btn btn-sm btn-primary">Go somewhere</a>
+      <h5 class="card-title">Finished?</h5>
+      <p class="card-text font-size-sm text-muted">Ready to go? You can get rid of your burger HERE.</p>
+      <a href="/assets/img/pexels-horizon-content-3915906.jpg" class="btn btn-sm btn-primary">TRASH</a>
     </div>
   </div>
 </div>
-   
-
-
