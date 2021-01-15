@@ -3,55 +3,56 @@
     <h1 class="display-4;">Burger Bar</h1>
   </div>
 </div>
-<!-- Card group -->
 
 <div class="card-group">
-
-  <!-- Card -->
   <div class="card">
     <img src="/assets/img/sign.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
       <h5 class="card-title">Place Burger Order HERE</h5>
       <p class="card-text font-size-sm text-muted">What kind of burger do you want? Type it below and hit the order
         button!</p>
-
       <form class="create-form">
-
         <div class="form-group">
           <label for="ca">Burger Type:</label>
-          <input type="text" id="bu" name="burger_name">
+          <input type="text" id="bu" name="burger">
         </div>
-
-        {{!-- <div class="form-group">
-          <label for="sleepy">Sleepy?</label><br>
-          <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-          <input type="radio" name="sleepy" value="0"> Awake
-        </div> --}}
-
-        <button type="submit">ORDER</button>
+        <button type="submit">Order Burger</button>
       </form>
-
-      {{!-- <a href="/assets/img/burger.jpg" class="btn btn-sm btn-primary">ORDER</a> --}}
     </div>
   </div>
 
-  <!-- Card -->
   <div class="card">
     <img src="/assets/img/burger2.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
       <h5 class="card-title">Pick up burger HERE</h5>
-      <p class="card-text font-size-sm text-muted">Your order is ready!</p>
-      <a href="./img/burger2.jpg" class="btn btn-sm btn-primary">PICKUP</a>
+      <p class="card-text font-size-sm text-muted"></p>
+      <div class="form-group">
+        {{!-- <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/unless}}
+          {{/each}}
+        </ul> --}}
+        <label for="eaten">Your order is ready!</label><br>
+        <button type="submit">Pickup</button>
+      </div>
     </div>
   </div>
 
-  <!-- Card -->
   <div class="card">
     <img src="/assets/img/plate.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
-      <h5 class="card-title">Finished?</h5>
-      <p class="card-text font-size-sm text-muted">Ready to go? You can get rid of your burger HERE.</p>
-      <a href="/assets/img/pexels-horizon-content-3915906.jpg" class="btn btn-sm btn-primary">TRASH</a>
+      <h5 class="card-title">Finished</h5>
+      {{!-- <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/if}}
+        {{/each}}
+      </ul> --}}
+     <p class="card-text font-size-sm">Ready to go? You can get rid of your trash below.</p>
+     <button type="submit">Trash</button>
     </div>
   </div>
 </div>
