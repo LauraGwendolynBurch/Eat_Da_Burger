@@ -33,7 +33,7 @@
           {{#unless devoured}}
           <li>
           {{burger_name}}
-          <button type="submit">Pickup</button>
+          <button data-id={{id}} class="orderBurger" type="submit" data-order="true">Pickup</button>
           </li>
           {{/unless}}
           {{/each}}
@@ -46,15 +46,17 @@
     <img src="/assets/img/plate.jpg" class="card-img-top" alt="Card image">
     <div class="card-body">
       <h5 class="card-title">Finished</h5>
-      {{!-- <ul>
+      <p class="card-text font-size-sm">Ready to go? You can get rid of your trash below.</p>
+       <ul>
         {{#each burgers}}
         {{#if devoured}}
-        {{> burgers/burger-block devoured=true}}
+         <li>
+          {{burger_name}}
+          <button data-id={{id}} class="trashBurger" type="submit" data-order="true">Trash</button>
+          </li>
         {{/if}}
         {{/each}}
-      </ul> --}}
-      <p class="card-text font-size-sm">Ready to go? You can get rid of your trash below.</p>
-      <button type="submit">Trash</button>
+      </ul> 
     </div>
   </div>
 </div>
