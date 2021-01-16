@@ -1,11 +1,10 @@
-
-  $(".create-form").on("submit", function(event) {
+$(function () {
+  $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newburger = {
-      burger_name: $("#bu").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      burger_name: $("#bu").val().trim()
     };
 
     // Send the POST request.
@@ -13,10 +12,11 @@
       type: "POST",
       data: newburger
     }).then(
-      function() {
+      function () {
         console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
+})
