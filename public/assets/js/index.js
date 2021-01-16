@@ -19,4 +19,24 @@ $(function () {
       }
     );
   });
+  
+  $(".change-devoured").on("click", function(event) {
+    var id = $(this).data("id");
+    // var newBurger = $(this).attr("data-order");
+
+    var newBurger= {
+      devoured: true
+    };
+    console.log(id)
+    console.log(newBurger)
+    
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: newBurger
+    }).then(
+      function() {
+                location.reload();
+      }
+    );
+  });
 })
