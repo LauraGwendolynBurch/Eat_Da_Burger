@@ -16,7 +16,7 @@
           <label for="bu">Burger Type:</label>
           <input type="text" id="bu" name="burger">
         </div>
-        <button type="submit">Order Burger</button>
+        <button class="bu" type="submit">Order Burger</button>
       </form>
     </div>
   </div>
@@ -52,7 +52,7 @@
         {{#if devoured}}
          <li>
           {{burger_name}}
-          <button data-id={{id}} class="delete-burger" type="submit" data-order="true">Trash</button>
+          <button data-id={{id}} class="delete-burger"type="submit" data-order="true">Trash</button>
           </li>
         {{/if}}
         {{/each}}
