@@ -1,6 +1,6 @@
 # Eat_Da_Burger
 ## Description
-Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page waiting to be devoured. Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page. This app stores every burger in the database, whether devoured or not.
+Eat-Da-Burger is a restaurant app that lets users order the burger they'd like to eat. Whenever a user submits a burger's name, the app will display the burger in the middle of the page waiting to be picked up. Each burger in the waiting area have a pickup button. When the user clicks it, the burger will move to the right side of the page. There they can click a button that throws the finished burger into the trash. This app stores every burger in the database until it is thrown away.
 ## Table of Contents
 
 * [Title](#Title)
@@ -30,7 +30,7 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 ## Link-to-project 
 [Github Repo Eat_Da_Burger](https://github.com/LauraGwendolynBurch/Eat_Da_Burger)
 
-[Heroku Project link Eat_Da_Burger]()
+[Heroku Project link Eat_Da_Burger](https://rocky-fortress-95014.herokuapp.com/)
 
 ## Installation
 * NPM i inquirer
@@ -39,6 +39,7 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 * NPM express-handlebars
 
 ## User-Story
+This was a great challenge for a first time coder.  I very much enjoy working on and seeing the full stack application.  
 
 ## License
 [GNU GENERAL PUBLIC LICENSE 2.0](https://opensource.org/licenses/GPL-2.0)
@@ -47,19 +48,16 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 ## Contribution
 Clone repo | Push changes | Create Pull request
 
-## Test
-[Sample Video of Project ]()
-
 ## Image of sample code
-![Sample video of Project]()
+![Sample image of code](./public/assets/img/code1.png)
 
-## Image of sample code
-![Sample Image schema set up]()
+![Sample Image schema set up](./public/assets/img/schema.png)
+
+## Image of Application 
+![Sample Image schema set up](./public/assets/img/burger.png)
 
 ## Credits
 Anna Conover (tutor)
-
-LevelApp (tutor)
 
 University of Washington Bootcamp TAs and Instructor
 
